@@ -1,10 +1,13 @@
 using UnityEngine;
 using System.Collections;
 
+// this class requires a MoveMotor to actually move
+[RequireComponent(typeof(MoveMotor))]
 public class Player : MonoBehaviour {
-	
+
 	MoveMotor characterController;
 	
+	// 
 	public Transform aimTarget;
 	public Transform head;
 
