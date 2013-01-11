@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: ca34ef486292e4c82a844cce05e2aef9
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Base
+    100002: CameraTarget
+    100004: Head
+    100006: IK_Switch
+    100008: Leg_FK_Front_L
+    100010: Leg_FK_Front_R
+    100012: Leg_FK_Rear_L
+    100014: Leg_FK_Rear_R
+    100016: Leg_IK_Front_Target_L
+    100018: Leg_IK_Front_Target_R
+    100020: Leg_IK_Knee_Target_Front_L
+    100022: Leg_IK_Knee_Target_Front_R
+    100024: Leg_IK_Knee_Target_Rear_L
+    100026: Leg_IK_Knee_Target_Rear_R
+    100028: Leg_IK_Rear_Target_L
+    100030: Leg_IK_Rear_Target_R
+    100032: Position_Lock
+    100034: //RootNode
+    100036: Robot
+    100038: Robot_Armature
+    100040: Root
+    400000: Base
+    400002: CameraTarget
+    400004: Head
+    400006: IK_Switch
+    400008: Leg_FK_Front_L
+    400010: Leg_FK_Front_R
+    400012: Leg_FK_Rear_L
+    400014: Leg_FK_Rear_R
+    400016: Leg_IK_Front_Target_L
+    400018: Leg_IK_Front_Target_R
+    400020: Leg_IK_Knee_Target_Front_L
+    400022: Leg_IK_Knee_Target_Front_R
+    400024: Leg_IK_Knee_Target_Rear_L
+    400026: Leg_IK_Knee_Target_Rear_R
+    400028: Leg_IK_Rear_Target_L
+    400030: Leg_IK_Rear_Target_R
+    400032: Position_Lock
+    400034: //RootNode
+    400036: Robot
+    400038: Robot_Armature
+    400040: Root
+    4300000: Robot
+    7400000: Default Take
+    7400002: Robot_ArmatureAct_000
+    9500000: //RootNode
+    13700000: Robot
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      keepAdditionalBonesAnimation: 1
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      skeletonMaskElements: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .349999994
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Robot
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
