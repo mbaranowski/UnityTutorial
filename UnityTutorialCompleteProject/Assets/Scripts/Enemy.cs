@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 	// required component on this GameObject that makes us move based on this script's direction
 	MoveMotor characterController;
 	
+	public AudioClip[] deathAudio;
+	
 	void Start() {
 		// grab a reference to the motor component once
 		characterController = GetComponent<MoveMotor>();
@@ -38,7 +40,12 @@ public class Enemy : MonoBehaviour
 	{
 		// if a bullet was hit, the enemy is destroyed,
 		// good place to play sounds and destruction effects
-		if (Utility.IsInLayerMask(collision.gameObject, bulletLayer)) {
+		if (Utility.IsInLayerMask(collision.gameObject, bulletLayer)) 
+		{
+			
+			int audioIdx = Random.Range(0, deathAudio.Length);
+			player.audio.PlayOneShot( deathAudio[audioIdx], 1.0f);
+
 			Destroy(gameObject);
 		}
 	}

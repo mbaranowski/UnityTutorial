@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour {
 				Enemy newEnemy = Instantiate(enemy, pos, 
 					Quaternion.identity) as Enemy;
 				newEnemy.transform.parent = transform;
-				newEnemy.player = player;
+				newEnemy.player = player.transform;
 				rate *= 0.975f;
 			}
 			

@@ -35,6 +35,9 @@ public class Player : MonoBehaviour {
 	// starts a new life
 	public GameObject gameWorld;
 	
+	public AudioClip playerDeathAudio;
+	public AudioClip gunFireAudio;
+	
 	void Start() {
 		// get reference to the MoveMotor component once
 		characterController = GetComponent<MoveMotor>();
@@ -88,6 +91,9 @@ public class Player : MonoBehaviour {
 		// give the bullet an impulse force like a gun explosion to make it fly
 		newBullet.rigidbody.AddForce(transform.forward * 40, ForceMode.Impulse);
 		
+		// play gunshot sound
+		audio.PlayOneShot(gunFireAudio, 0.3f);
+		
 		// bullets needs to be removed after a while or they'll start accumulating, slowing the game down
 		Destroy(newBullet, bulletLifetime);
 	}
@@ -128,6 +134,8 @@ public class Player : MonoBehaviour {
 	// saved, and it will resume execution after the yield statement
 	IEnumerator PlayerDeath()
 	{
+		audio.PlayOneShot(playerDeathAudio);
+		
 		rigidbody.isKinematic = true;
 		float elapsed = 0;
 		
